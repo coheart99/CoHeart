@@ -1,8 +1,16 @@
 {
   "rewrites": [
     {
-      "source": "/auth",
-      "destination": "/index.html"
+      "source": "/api/send-invitation",
+      "destination": "https://coheart-parently-connected.vercel.app/functions/v1/send-invitation"
+    },
+    {
+      "source": "/api/accept-invitation",
+      "destination": "https://coheart-parently-connected.vercel.app/functions/v1/accept-invitation"
+    },
+    {
+      "source": "/auth/:path*",
+      "destination": "/"
     }
   ]
 }
